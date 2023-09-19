@@ -53,7 +53,7 @@ func main() {
 		return &api.InteractionResponseData{Content: option.NewNullableString(data.Event.Message.MentionChannels[0].ChannelName + " has been set as the Join Log Channel.")}
 	})
 
-	s := state.New("Bot " + "MTA0NDEyMjE3MDExODM4NTc3NQ.GACcVE.268NLuMCjdtnHQuWZoAqAF2TKkJMo7BzCsYQSU")
+	s := state.New("Bot " + "")
 	s.AddIntents(gateway.IntentGuilds)
 	s.AddInteractionHandler(r)
 
